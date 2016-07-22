@@ -1,0 +1,12 @@
+PODS:
+  - RWThreeRingControl (1.0.0)
+
+DEPENDENCIES:
+  - RWThreeRingControl
+
+SPEC CHECKSUMS:
+  RWThreeRingControl: ae3d7eca6e7773d273aa95431ecbf6d1dd91abad
+
+PODFILE CHECKSUM: f097858d71cb33f4c34e62eee930aa7b674496f9
+
+COCOAPODS: 1.0.1

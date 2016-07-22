@@ -1,0 +1,6 @@
+framework module RWThreeRingControl {
+  umbrella header "RWThreeRingControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
