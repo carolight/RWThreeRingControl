@@ -33,10 +33,10 @@ public class Fanfare {
   private var player: AVAudioPlayer?
 
   public func playSoundsWhenReady() {
-    NotificationCenter.default().addObserver(forName: NSNotification.Name(rawValue: RingCompletedNotification), object: nil, queue: OperationQueue.main()) { _ in
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: RingCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
       self.playSound(self.ringSound)
     }
-    NotificationCenter.default().addObserver(forName: NSNotification.Name(rawValue: AllRingsCompletedNotification), object: nil, queue: OperationQueue.main()) { _ in
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AllRingsCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
       self.playSound(self.allRingSound)
     }
   }
@@ -53,6 +53,6 @@ public class Fanfare {
   }
 
   deinit {
-    NotificationCenter.default().removeObserver(self)
+    NotificationCenter.default.removeObserver(self)
   }
 }
