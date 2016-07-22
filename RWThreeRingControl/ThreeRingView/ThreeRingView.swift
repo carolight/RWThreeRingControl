@@ -167,10 +167,10 @@ extension ThreeRingView {
   }
   
   private func postAllRingsCompletedNotification() {
-    NotificationCenter.default.post(name: Notification.Name(rawValue: AllRingsCompletedNotification), object: self)
+    NotificationCenter.default().post(name: Notification.Name(rawValue: AllRingsCompletedNotification), object: self)
   }
   private func postRingCompletedNotification() {
-    NotificationCenter.default.post(name: Notification.Name(rawValue: RingCompletedNotification), object: self)
+    NotificationCenter.default().post(name: Notification.Name(rawValue: RingCompletedNotification), object: self)
   }
 }
 
